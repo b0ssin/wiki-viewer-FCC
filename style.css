@@ -1,0 +1,59 @@
+/*#search-bar {
+	position: relative;
+	top: 100px;
+	left: 25%;
+	width: 50%; height: 28px;
+	background: url(http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png) no-repeat right;
+    background-size: 20px 20px;
+    background-position: 98% 50%;
+	border: 1px solid #D3D3D3;
+	border-radius: 20px;
+	margin-left: 15px;
+}*/
+/*
+#8daa91 - equivelant to my white, meaning make it background
+#28112b - equivelant to my black, meaning make it text color
+#453643 - equivelant to a greyish, use it as search bar border and shadow
+*/
+
+a {
+	text-decoration: underline;
+	color: inherit;
+}
+body {
+	background-color: #8DAA91;
+}
+
+#info {
+	color: #28112b;
+}
+
+/* Search Bar */
+#search-wrapper {
+	position: relative;
+	display: inline-block;
+	top: 100px; left: 25%;
+}
+#search-bar {
+	width: 450px; height: 40px;
+	padding-left: 12px;
+	border-radius: 5px;
+	border-style: none;
+	background-color: #788475; 
+}
+
+
+/* Search Button */
+#search-icon {
+	width: 20px; height: 20px;
+	background-color: transparent;
+	border: none;
+}
+
+#search-button {
+	position: relative;
+	left: -45px;
+	top: 3px;
+	background-color: transparent;
+	border: none;
+}

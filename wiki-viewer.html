@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Wiki-Viewer</title>
+	<link rel="stylesheet" href="style.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+	@media (max-width: 400px) {
+		#search-wrapper {
+			width: 100%;
+    	}
+
+    	#info {
+    		font-size: .8em;
+    	}
+    }
+
+    @media (max-width: 700px) {
+    	#search-wrapper {
+    		width: 60%;
+    	}
+    	#search-bar {
+    		width: 60%;
+    	}
+    }
+    @media (min-width: 700px) {
+    	#search-wrapper {
+    		width: 70%;
+    	}
+    	#search-bar {
+    		width: 80%;
+    	}
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="wiki-viewer.js"></script>
+</head>
+
+<body>
+    
+	<form id='search-wrapper'>
+	    <p id="info">Click <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">here</a> for a random article.</p>
+		<input type='text' id='search-bar' placeholder="Search...">
+		<button type="submit" id="search-button">
+			<img id="search-icon" src="http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png">
+		</button>
+	</form>
+
+</body>
+</html>
