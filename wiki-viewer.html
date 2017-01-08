@@ -14,6 +14,7 @@
     	}
 
     	#info {
+
     		font-size: .8em;
     	}
     }
@@ -41,10 +42,10 @@
 
 <body>
     
-	<form id='search-wrapper'>
+	<form id='search-wrapper' onsubmit="return false">
 	    <p id="info">Click <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">here</a> for a random article.</p>
 		<input type='text' id='search-bar' placeholder="Search...">
-		<button type="submit" id="search-button">
+		<button type="button" id="search-button">
 			<img id="search-icon" src="http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png">
 		</button>
 	</form>

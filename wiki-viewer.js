@@ -1,26 +1,27 @@
 $(document).ready(function() {
-	console.log('ok')
-	$('button').click(function() {
-		console.log('click function working');
-/*		
-		var searchTerms = $("#search-bar").val();
+	let searchFunction = function() {
+		let searchTerms = $("#search-bar").val();
 		console.log(searchTerms);
-		var url = "https;//en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerms + "&format-json&callback=?";
-		//ajax call
-		console.log('pre');
+		var url = "http://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerms + "&format-jsonp&callback=?";
 		$.ajax({
 			type: "GET",
 			url: url,
-			dataType: "json",
+			dataType: "jsonp",
 			success: function(data) {
-				alert('success');
+				console.log(data);
 			},
 			error: function(errorMessage) {
 				alert(errorMessage);
 			}
 		});
+	};
+	$('#search-button').click(searchFunction);
 
-	});*/
+	$("#search-bar").keypress(function (e) {
+		var key = e.which;
+		if(key == 13) { //key code
+			$("#search-button").click();
+		} 
+	})
 
-	});
 });
