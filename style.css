@@ -24,6 +24,10 @@ body {
 	background-color: #8DAA91;
 }
 
+h1 {
+	color: blue;
+}
+
 #info {
 	color: #28112b;
 }
@@ -32,11 +36,14 @@ body {
 #search-wrapper {
 	position: relative;
 	display: block;
-	top: 100px; left: 25%;
+	top: 100px;
+	margin: 0 auto;
 
 }
 #search-bar {
-	width: 450px; height: 40px;
+	position: relative;
+	height: 40px;
+	margin: 0 auto;
 	padding-left: 12px;
 	border-radius: 5px;
 	border-style: none;
@@ -64,5 +71,6 @@ div.item-wrapper {
 	display: block;
 	top: 100px;
 	left: 25%;
+	width: 50%;
 
 }
